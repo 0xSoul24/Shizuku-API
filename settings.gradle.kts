@@ -11,10 +11,10 @@ plugins {
 }
 
 android {
-    compileSdk = 36
+    compileSdk = 37
     minSdk = 23
     targetSdk = 36
-    ndkVersion = "29.0.13113456"
+    ndkVersion = "30.0.14904198"
     buildToolsVersion = "36.0.0"
 }
 
@@ -27,6 +27,4 @@ dependencyResolutionManagement {
     }
 }
 
-include ':aidl', ':shared', ':api', ':provider', ':rish'
-include ':demo', ':demo-hidden-api-stub'
-include ':server-shared'
+include(":aidl", ":shared", ":api", ":provider", ":rish", ":demo", ":demo-hidden-api-stub", ":server-shared")
